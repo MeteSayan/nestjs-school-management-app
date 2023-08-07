@@ -37,3 +37,23 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
+
+## GraphQL
+
+### Url
+
+```bash
+http://localhost:3000/graphql
+```
+
+### Query Examples
+
+```bash
+# For the get only lesson name and startDate 
+query{
+  lesson{
+    name
+    startDate
+  }
+}
+```
