@@ -4,7 +4,7 @@
 
 ## Description
 
-Basic Nestjs School Management APP With GraphQL + MongoDB
+Basic Nestjs School Management APP With GraphQL + MongoDB + TypeORM
 
 ## Installation
 
