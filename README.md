@@ -70,3 +70,13 @@ mutation{
   }
 }
 ```
+
+```bash
+# Get Lesson By Id
+query{
+  lesson (id: "4f5bee76-323e-454d-9cc8-70bd73f95095"){
+    name
+    startDate
+  }
+}
+```
