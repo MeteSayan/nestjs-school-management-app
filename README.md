@@ -57,3 +57,16 @@ query{
   }
 }
 ```
+
+```bash
+# For create lesson
+mutation{
+  createLesson(
+    name: "Physics Class"
+    startDate: "2023-08-08T-08:00:00Z"
+    endDate: "2023-08-08T-08:00:00Z"
+  ){
+    name
+  }
+}
+```
