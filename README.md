@@ -49,9 +49,9 @@ http://localhost:3000/graphql
 ### Query Examples
 
 ```bash
-# For the get only lesson name and startDate 
+# For the get all lessons only with name and startDate
 query{
-  lesson{
+  lessons{
     name
     startDate
   }

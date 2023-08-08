@@ -12,7 +12,11 @@ export class LessonService {
     ) { }
 
     async getLesson(id: string): Promise<Lesson> {
-        return this.lessonRepository.findOneBy({ id })
+        return this.lessonRepository.findOneBy({ id });
+    }
+
+    async getLessons(): Promise<Lesson[]> {
+        return this.lessonRepository.find();
     }
 
     async createLesson(createLessonInput: CreateLessonInput): Promise<Lesson> {
