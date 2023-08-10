@@ -92,6 +92,10 @@ mutation{
     id
     startDate
     endDate
+    students{
+      firstName
+      lastName
+    }
   }
 }
 ```
