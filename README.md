@@ -83,3 +83,18 @@ query{
   }
 }
 ```
+
+```bash
+# For create student
+mutation{
+  createStudent(
+    createStudentInput:{
+      firstName: "Mete",
+      lastName: "Sayan"
+    }){
+    id
+    firstName
+    lastName
+  }
+}
+```
