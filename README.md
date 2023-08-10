@@ -95,6 +95,16 @@ query{
 ```
 
 ```bash
+# Get Student By Id
+query{
+  student (id: "52f2de32-98e6-44c5-a96c-25394e06cfd3"){
+    firstName
+    lastName
+  }
+}
+```
+
+```bash
 # For create student
 mutation{
   createStudent(
