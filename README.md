@@ -118,3 +118,22 @@ mutation{
   }
 }
 ```
+
+```bash
+# Assign students to lesson
+mutation{
+  assignStudentsToLesson(
+    assignStudentsToLessonInput:{
+      lessonId: "e12e880c-69cd-4fd2-8b1f-a6e60a0412ba",
+      studentIds: [
+        "8fec513c-0b65-4d97-a76b-a082e4a13683",
+        "52f2de32-98e6-44c5-a96c-25394e06cfd3"
+      ]
+    }
+  ){
+    name
+    startDate
+    endDate
+  }
+}
+```
