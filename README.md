@@ -75,6 +75,28 @@ mutation{
 ```
 
 ```bash
+# Create lesson with students
+mutation{
+  createLesson(
+    createLessonInput:{
+     name: "React Class"
+     startDate: "2023-08-08T08:00:00Z"
+     endDate: "2023-08-08T08:00:00Z"
+      students: [
+        "8fec513c-0b65-4d97-a76b-a082e4a13683",
+        "52f2de32-98e6-44c5-a96c-25394e06cfd3"
+      ]
+    }
+  ){
+    name
+    id
+    startDate
+    endDate
+  }
+}
+```
+
+```bash
 # Get Lesson By Id
 query{
   lesson (id: "4f5bee76-323e-454d-9cc8-70bd73f95095"){
