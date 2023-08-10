@@ -85,6 +85,16 @@ query{
 ```
 
 ```bash
+# For the get all students
+query{
+  students{
+    firstName
+    lastName
+  }
+}
+```
+
+```bash
 # For create student
 mutation{
   createStudent(
